@@ -4,8 +4,8 @@ $pc: 1360px;
 $full-hd: 1920px;
 $uhd: 3840px;
 
-$global-width: min(calc(320px + ((1vw - 3.6px) * 88)), 1197px);
-$global-width--small: min(max(320px, calc(20rem + ((1vw - 3.2px) * 47.1875))), 1075px);
+$global-width: clamp(32rem, 0.3200rem + 88.0000vw, 120rem);
+$global-width--small: clamp(32rem, 5.0000rem + 75.0000vw, 107rem);
 
 /* colors */
 $white: #fff;
@@ -35,7 +35,6 @@ $font-weight-bold: 700;
 $font-weight-extrabold: 800;
 
 $line-height: 1.2;
-
 
 html {
     font-size: 58%;
