@@ -1,4 +1,5 @@
 {
+    "title": "JSON schema for WordPress block theme global settings and styles",
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
@@ -13,36 +14,91 @@
                     "name": "White",
                     "slug": "white",
                     "color": "#fff"
+                },
+                {
+                    "name": "Action",
+                    "slug": "action",
+                    "color": "#E30613"
                 }
-            ]
+            ],
+            "customGradient": false,
+            "link": true
         },
-        "typography":{
+        "typography": {
             "fontSizes": [
                 {
-					"slug": "small",
-					"size": "1.5rem",
-					"name": "Small"
-				},
+                    "slug": "small",
+                    "size": "1.5rem",
+                    "name": "Small"
+                },
                 {
                     "slug": "regular",
-					"size": "2rem",
-					"name": "Regular"
+                    "size": "2rem",
+                    "name": "Regular"
                 },
                 {
                     "slug": "medium",
-					"size": "2.5rem",
-					"name": "Medium"
+                    "size": "2.5rem",
+                    "name": "Medium"
                 },
                 {
                     "slug": "big",
-					"size": "3.5rem",
-					"name": "Big"
+                    "size": "3.5rem",
+                    "name": "Big"
+                },
+                {
+                    "slug": "extrabig",
+                    "size": "4rem",
+                    "name": "Extra Big"
                 }
-            ]
+            ],
+            "lineHeight": true,
+            "dropCap": false
         },
         "layout": {
             "contentSize": "clamp(32rem, 0.3200rem + 88.0000vw, 120rem)",
             "wideSize": "clamp(32rem, 5.0000rem + 75.0000vw, 107rem)"
+        },
+        "spacing": {
+            "padding": true,
+            "margin": true,
+            "units": [
+                "px",
+                "rem",
+                "%"
+            ]
+        },
+        "appearanceTools": true
+    },
+    "styles": {
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--system-fonts)",
+            "lineHeight": "1.2"
+        },
+        "spacing": {
+            "margin": {
+                "top": "0px",
+                "right": "0px",
+                "bottom": "0px",
+                "left": "0px"
+            }
+        },
+        "blocks": {
+            "core/post-title": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--big)"
+                }
+            },
+            "core/paragraph": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--medium)"
+                }
+            },
+            "core/post-excerpt": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--regular)"
+                }
+            }
         }
     },
     "templateParts": [

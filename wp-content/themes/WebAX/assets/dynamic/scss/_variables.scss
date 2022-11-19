@@ -39,6 +39,7 @@ $line-height: 1.2;
 html {
     font-size: 58%;
     line-height: $line-height;
+    font-family: $font-family-main;
     
     @media(min-width: $tablet) {
         font-size: 60%;
