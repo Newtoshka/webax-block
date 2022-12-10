@@ -36,8 +36,20 @@ $font-weight-extrabold: 800;
 
 $line-height: 1.2;
 
+// $min-font:10px;
+// $max-font:28px;
+// $min-width:992px; 
+// $max-width:3840px;
+
+// $font-multiplayer: calc(($max-font - $min-font) / ($max-width - $min-width));
+// $y-intercept: calc($min-font - ( $font-multiplayer * $min-width ) );
+// $width-multiplayer: calc(($font-multiplayer * 100)) + vw;
+
 html {
+    // font-size: clamp($min-font, $width-multiplayer + $y-intercept, $max-font);
+
     font-size: 58%;
+
     line-height: $line-height;
     font-family: $font-family-main;
     

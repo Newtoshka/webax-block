@@ -7,22 +7,22 @@ register_nav_menus([
 ]);
 
 /** Menu item image */
-function custom_menu_image(array $items, stdClass $args) {
-    if( $args->theme_location == 'header' ) {
-        foreach( $items as &$item ) {
+function custom_menu_image(array $items, stdClass $args)
+{
+    if ($args->theme_location == 'header') {
+        foreach ($items as &$item) {
 
-            if($item->type == 'custom' || $item->menu_item_parent == 0) continue;
-            if($item->type == 'post_type') {
+            if ($item->type == 'custom' || $item->menu_item_parent == 0) continue;
+            if ($item->type == 'post_type') {
                 // $product_category_id = wc_get_product_term_ids( $item->object_id, 'product_cat' )[0];
                 // $product_category_img = wp_get_attachment_url( get_term_meta( $product_category_id, 'thumbnail_id', true ) );
-                
+
                 // $item->title = $item->title."<img class='menu_image' src='$product_category_img'>";
-            }else{
-                $cat_image = wp_get_attachment_url( get_term_meta( $item->object_id, 'thumbnail_id', true ) );
+            } else {
+                $cat_image = wp_get_attachment_url(get_term_meta($item->object_id, 'thumbnail_id', true));
 
-                $item->title = $item->title."<img class='menu_image' src='$cat_image' height='254' width='227'>";
+                $item->title = $item->title . "<img class='menu_image' src='$cat_image' height='254' width='227'>";
             }
-
         }
     }
     return $items;
@@ -36,19 +36,20 @@ add_filter('auto_update_theme', '__return_false');
 
 /** Remove default post button */
 //Remove side menu
-add_action('admin_menu', 'remove_default_post_type');
+// add_action('admin_menu', 'remove_default_post_type');
 function remove_default_post_type()
 {
     remove_menu_page('edit.php');
 }
+
 // Remove +New post in top Admin Menu Bar
-add_action('admin_bar_menu', 'remove_default_post_type_menu_bar', 999);
+// add_action('admin_bar_menu', 'remove_default_post_type_menu_bar', 999);
 function remove_default_post_type_menu_bar($wp_admin_bar)
 {
     $wp_admin_bar->remove_node('new-post');
 }
 // Remove Quick Draft Dashboard Widget
-add_action('wp_dashboard_setup', 'remove_draft_widget', 999);
+// add_action('wp_dashboard_setup', 'remove_draft_widget', 999);
 
 function remove_draft_widget()
 {

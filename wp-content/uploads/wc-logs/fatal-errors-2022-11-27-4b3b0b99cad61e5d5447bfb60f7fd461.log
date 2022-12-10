@@ -1,0 +1,56 @@
+2022-11-27T13:59:28+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "themename_custom_logo_setup" not found or invalid function name in C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\webax\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\webax\wp-settings.php(595): do_action('after_setup_the...')
+#3 C:\xampp\htdocs\webax\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\webax\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\webax\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php on line 308
+
+2022-11-27T14:01:27+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "themename_custom_logo_setup" not found or invalid function name in C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\webax\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\webax\wp-settings.php(595): do_action('after_setup_the...')
+#3 C:\xampp\htdocs\webax\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\webax\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\webax\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php on line 308
+
+2022-11-27T14:03:27+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "themename_custom_logo_setup" not found or invalid function name in C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\webax\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\webax\wp-settings.php(595): do_action('after_setup_the...')
+#3 C:\xampp\htdocs\webax\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\webax\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\webax\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php on line 308
+
+2022-11-27T14:05:28+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "themename_custom_logo_setup" not found or invalid function name in C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\webax\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\webax\wp-settings.php(595): do_action('after_setup_the...')
+#3 C:\xampp\htdocs\webax\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\webax\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\webax\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php on line 308
+
+2022-11-27T14:06:03+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "themename_custom_logo_setup" not found or invalid function name in C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\webax\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\webax\wp-settings.php(595): do_action('after_setup_the...')
+#3 C:\xampp\htdocs\webax\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\webax\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\webax\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\webax\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\webax\wp-includes\class-wp-hook.php on line 308
+

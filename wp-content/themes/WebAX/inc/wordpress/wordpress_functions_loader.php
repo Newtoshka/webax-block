@@ -1,5 +1,8 @@
 <?php
 
+/** Load wordpress support functions */ 
+get_template_part('inc/wordpress/theme_support');
+
 /** Load ACF functions */ 
 get_template_part('inc/wordpress/acf');
 
